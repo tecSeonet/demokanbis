@@ -370,6 +370,11 @@ label {
     padding-top: 0px;
     margin-top: -18px;
 }
+.logo-k-cbd {
+	width: 180px;
+    padding-top: 0px;
+    margin-top: -11px;
+}
 
 .bg-info-k {
     background: #fff;
@@ -5943,7 +5948,7 @@ body.search-visible {
 .menu-area-two .navbar-wrap ul li .sub-menu li:hover > a,
 .menu-area-two .navbar-wrap > ul > li.active > a,
 .menu-area-two .navbar-wrap > ul > li:hover > a {
-    color: var(--tg-primary-color);
+    color: var(--tg-secondary-color);
 }
 .menu-area-two .navbar-wrap > ul > li > a::after {
     content: "";
@@ -6026,6 +6031,12 @@ body.search-visible {
     display: none;
 }
 .menu-area-two.sticky-menu .logo-k.d-none {
+    display: block !important;
+}
+.menu-area-two.sticky-menu .logo-k-cbd {
+    display: none;
+}
+.menu-area-two.sticky-menu .logo-k-cbd.d-none {
     display: block !important;
 }
 .menu-area-two.sticky-menu .logo {
