@@ -3013,8 +3013,8 @@ body.search-visible {
 	margin: 0 0 20px;
 }
 .formula-list li {
-	font-weight: 500;
-	font-size: 20px;
+	font-weight: 400;
+	font-size: 16px;
 	color: var(--tg-white);
 	letter-spacing: 0.02em;
 	display: flex;
