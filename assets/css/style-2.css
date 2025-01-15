@@ -114,7 +114,7 @@ button:focus {
 a:hover,
 .portfolio-cat a:hover,
 .footer -menu li a:hover {
-	color: var(--tg-primary-color);
+	color: var(--tg-secondary-color);
 	text-decoration: none;
 }
 a,

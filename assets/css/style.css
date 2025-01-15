@@ -114,7 +114,7 @@ button:focus {
 a:hover,
 .portfolio-cat a:hover,
 .footer -menu li a:hover {
-	color: var(--tg-primary-color);
+	color: var(--tg-secondary-color);
 	text-decoration: none;
 }
 a,
@@ -1420,6 +1420,7 @@ body.search-visible {
 	z-index: -1;
 	transition: .4s linear;
 }
+
 .features-content .title {
 	font-size: 20px;
 	color: var(--tg-white);
@@ -1444,6 +1445,110 @@ body.search-visible {
 .features-items-wrap .row>*:nth-child(4n) .features-item {
 	margin-left: 50px;
 }
+/* 8. Features violeta */
+/* 8. Features */
+.features-bg {
+	background-position: center;
+	background-size: cover;
+	padding: 97px 0;
+	position: relative;
+	margin: 37px 0 44px;
+}
+.features-bg::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: -41px;
+	width: 100%;
+	height: 41px;
+	background-image: url(../img/bg/features_shape01.png);
+	background-repeat: repeat-x;
+	background-position: center;
+}
+.features-bg::after {
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: -50px;
+	width: 100%;
+	height: 50px;
+	background-image: url(../img/bg/features_shape02.png);
+	background-repeat: repeat-x;
+	background-position: center;
+}
+.features-img {
+	text-align: right;
+	margin-right: -30px;
+}
+.features-item {
+	margin: 0 0 50px;
+}
+.features-icon {
+	font-size: 50px;
+	color: #FEE431;
+	position: relative;
+	z-index: 1;
+	margin: 0 0 27px;
+}
+.features-icon::after {
+	content: "";
+	position: absolute;
+	left: 20px;
+	top: 5px;
+	width: 40px;
+	height: 40px;
+	background: #20B764;
+	border-radius: 50%;
+	z-index: -1;
+	transition: .4s linear;
+}
+
+.features-content .title {
+	font-size: 20px;
+	color: var(--tg-white);
+	letter-spacing: 0.02em;
+	margin-bottom: 14px;
+}
+.features-content p {
+	margin: 0 0;
+	color: var(--tg-white);
+}
+.features-item:hover .features-icon::after {
+	left: 5px;
+}
+.features-items-wrap .row>*:nth-last-child(-n+2) .features-item {
+	margin: 0 0;
+}
+.features-items-wrap .row>*:nth-child(4n+1) .features-item ,
+.features-items-wrap .row>*:nth-child(4n+3) .features-item {
+	margin-right: 50px;
+}
+.features-items-wrap .row>*:nth-child(4n+2) .features-item,
+.features-items-wrap .row>*:nth-child(4n) .features-item {
+	margin-left: 50px;
+}
+/* 8. Features violeta */
+
+.features-icon-1 {
+	font-size: 50px;
+	color: #FEE431;
+	position: relative;
+	z-index: 1;
+	margin: 0 0 27px;
+}
+.features-icon-1::after {
+	content: "";
+	position: absolute;
+	left: 20px;
+	top: 5px;
+	width: 40px;
+	height: 40px;
+	background: #6B398E;
+	border-radius: 50%;
+	z-index: -1;
+	transition: .4s linear;
+}
+
 
 /* 9. Features Products */
 .features-products {
@@ -1466,7 +1571,7 @@ body.search-visible {
 	position: absolute;
 	left: 38%;
 	top: 50%;
-	background-image: url(../img/products/features_product_dots.png);
+	/* background-image: url(../img/products/features_product_dots.png); */
 	width: 706px;
 	height: 706px;
 	z-index: -1;
@@ -1536,7 +1641,7 @@ body.search-visible {
 	bottom: 7px;
 	width: 230px;
 	height: 46px;
-	background: #464646;
+	background: #46464617;
 	filter: blur(30px);
 	border-radius: 99px;
 	z-index: -1;
@@ -4236,7 +4341,7 @@ body.search-visible {
 
 /* 19. FAQ */
 .faq-wrapper {
-	margin: 0 0 0 100px;
+	margin: 0 0 0 10px;
 }
 .faq-wrapper .accordion-item {
 	background: transparent;
@@ -5017,8 +5122,14 @@ body.search-visible {
 }
 .tg-supplement-shape {
 	position: absolute;
-	right: 12%;
-	top: 2%;
+	right: 5%;
+	top: 40%;
+	z-index: -1;
+}
+.tg-supplement-shape-l {
+	position: absolute;
+	left: 6%;
+	top: 0%;
 	z-index: -1;
 }
 .rotateme {
