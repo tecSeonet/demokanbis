@@ -1228,7 +1228,7 @@ body.search-visible {
 	height: 100%;
 	width: 100%;
 	background: #090909;
-	opacity: .85;
+	opacity: .40;
 	z-index: -1;
 }
 .breadcrumb-bg::after {
@@ -3955,7 +3955,7 @@ body.search-visible {
 .format-quote blockquote::before,
 .blog-details-content blockquote::before {
     content: "";
-    background-image: url(../img/icons/blockquote_icon.png);
+    /* background-image: url(../img/icons/blockquote_icon.png); */
     position: absolute;
     right: 40px;
     top: 28px;
@@ -5031,11 +5031,21 @@ body.search-visible {
 .tg-supplement-inner {
 	padding: 0 79px;
 }
+
+.destacado-borde {
+	border: 1px solid #f3e5f8;
+	padding: 20px;
+	border-radius: 15px;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	-ms-border-radius: 15px;
+	-o-border-radius: 15px;
+}
 .tg-section-title .sub-title {
 	display: block;
 	font-size: 14px;
-	text-transform: uppercase;
-	color: #63af21;
+	/* text-transform: uppercase; */
+	color: #742C8F;
 	font-weight: 500;
 	letter-spacing: 3px;
 	margin-bottom: 10px;
@@ -5045,7 +5055,7 @@ body.search-visible {
 	margin-bottom: 0;
 	line-height: 1.1;
 	letter-spacing: -.5px;
-	text-transform: uppercase;
+	/* text-transform: uppercase; */
 	font-weight: 600;
 }
 .tg-supplement-content p {

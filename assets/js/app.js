@@ -228,20 +228,33 @@ var THEMEIM = THEMEIM || {};
 
   THEMEIM.documentOnLoad = {
     init: function() {
-      // $("#loader-wrapper").delay(3000).fadeOut("slow");
+      // Comprobar si la pantalla es mayor a 991px
       if ($(window).width() > 991) {
+        // Verificar si existe el contenedor del popup
         if ($('.megamenu-cookies').length) {
-          var $cookies = $('.megamenu-cookies').addClass('seen').delay(0),
-            $cookiesRemove = $cookies.children('.remove, .agree');
-          $cookiesRemove.on('click', function() {
-            $('.megamenu-cookies').removeClass('seen');
-          });
-        };
-        
+          // Comprobar si el popup ya se ha mostrado en esta sesión
+          if (!sessionStorage.getItem('popupShown')) {
+            // Mostrar el popup
+            var $cookies = $('.megamenu-cookies').addClass('seen');
+            
+            // Marcar como mostrado en sessionStorage
+            sessionStorage.setItem('popupShown', 'true');
+  
+            // Configurar el cierre del popup al hacer clic en los botones
+            var $cookiesRemove = $cookies.children('.remove, .agree');
+            $cookiesRemove.on('click', function() {
+              $('.megamenu-cookies').removeClass('seen');
+            });
+          }
+        }
       }
     },
   };
 
+  $(document).ready(function() {
+    THEMEIM.documentOnLoad.init();
+  });
+  
   THEMEIM.documentOnResize = {
     init: function() {},
   };
