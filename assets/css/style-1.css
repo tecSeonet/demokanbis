@@ -5323,6 +5323,12 @@ body.search-visible {
 	background: #fafafa;
 	padding: 115px 0 90px;
 }
+
+/* pasos */
+.pasos {
+	width: 80%;
+    padding-bottom: 5%;
+}
 .tg-service-item {
 	background: var(--tg-white);
 	border: 1px solid #f3f3f3;
@@ -5330,7 +5336,7 @@ body.search-visible {
 	margin-bottom: 30px;
 	transform: translateY(0);
 	padding: 40px 40px;
-	text-align: center;
+	/* text-align: center; */
 	position: relative;
 	z-index: 1;
 }
@@ -5358,7 +5364,7 @@ body.search-visible {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	background-color: #63af21;
+	background-color: #64498C;
 	background-image: linear-gradient(135deg, rgba(148, 190, 38, 1) 0%, rgba(101, 176, 33, 1) 100%);
 	border-radius: 50%;
 	margin: 0 auto 30px;
@@ -5372,7 +5378,7 @@ body.search-visible {
 	line-height: 1.2;
 }
 .tg-service-item .title a:hover {
-	color: #63af21;
+	color: #64498C;
 }
 .tg-service-content p {
 	margin-bottom: 25px;
@@ -5385,10 +5391,10 @@ body.search-visible {
 .tg-service-content a i {
 	font-size: 15px;
 	margin-right: 8px;
-	color: #63af21;
+	color: #64498C;
 }
 .tg-service-content a:hover {
-	color: #63af21;
+	color: #64498C;
 }
 
 /* shop-details */
