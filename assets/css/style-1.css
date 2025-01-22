@@ -5397,6 +5397,11 @@ body.search-visible {
 	color: #64498C;
 }
 
+.img-responsive {
+	max-width: 100%;
+	padding: 3% ;
+}
+
 /* shop-details */
 .tg-shop-details-bg {
 	background-image: url(../img/bg/shop_det_bg.png);
