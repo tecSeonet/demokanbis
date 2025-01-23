@@ -634,7 +634,7 @@ function easyPieChart() {
 				lineCap: 'round',
 				rotate: 360,
 				trackColor: '#F4F4F4',
-				barColor:'#7AA540',
+				barColor:'#29A884',
 			});
 		}
 	});
